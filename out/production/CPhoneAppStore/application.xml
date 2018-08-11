@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+    <entry key="application.name">AppStore</entry>
+    <entry key="application.main">net.comorevi.cosse.cphoneappstore.CPhoneAppStore</entry>
+    <entry key="application.author">Itsu</entry>
+    <entry key="application.version">1.0.0</entry>
+    <entry key="application.iconurl">https://google.com/</entry>
+    <entry key="application.description">しふぉん専用のアプリケーションストア。すべてのアプリケーションはここからダウンロードできます。</entry>
+    <entry key="application.permission">everyone</entry>
+    <entry key="application.isdefault">true</entry>
+    <entry key="application.price">0</entry>
+</properties>
