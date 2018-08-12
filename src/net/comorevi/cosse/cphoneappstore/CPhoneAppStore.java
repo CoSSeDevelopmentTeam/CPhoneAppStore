@@ -72,11 +72,11 @@ public class CPhoneAppStore extends ApplicationBase {
         .setId(FormIDs.ID_MENU)
         .setTitle("CPhoneAppStore");
 
-        menu.addButton(new Button(TextFormat.AQUA + "ストア"));
-        menu.addButton(new Button("おすすめ"));
-        menu.addButton(new Button("ランキング"));
-        menu.addButton(new Button("検索"));
-        menu.addButton(new Button("購入済み"));
+        menu.addButton(new Button(TextFormat.AQUA + "ストア", "url", "https://raw.githubusercontent.com/CoSSeDevelopmentTeam/CPhoneAppStore/master/icons/store.png"));
+        menu.addButton(new Button("おすすめ", "url", "https://raw.githubusercontent.com/CoSSeDevelopmentTeam/CPhoneAppStore/master/icons/recommended.png"));
+        menu.addButton(new Button("ランキング", "url", "https://raw.githubusercontent.com/CoSSeDevelopmentTeam/CPhoneAppStore/master/icons/ranking.png"));
+        menu.addButton(new Button("検索", "url", "https://raw.githubusercontent.com/CoSSeDevelopmentTeam/CPhoneAppStore/master/icons/search.png"));
+        menu.addButton(new Button("購入済み", "url", "https://raw.githubusercontent.com/CoSSeDevelopmentTeam/CPhoneAppStore/master/icons/bought.png"));
 
         phone.sendForm(player, menu);
     }

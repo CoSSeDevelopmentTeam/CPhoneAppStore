@@ -116,7 +116,7 @@ public class FormProcessor {
                 : TextFormat.ITALIC + "" + TextFormat.GRAY + "未インストール\n"
         );
         buf.append("\n");
-        buf.append(TextFormat.GREEN + "説明: \n");
+        buf.append(TextFormat.RESET +  "" + TextFormat.GREEN + "説明: \n");
         buf.append(TextFormat.RESET + des.getDescription());
 
         if (ApplicationManager.getPlayerApplications(player.getName()).contains(des.getName())) form.setButton1Text("Close");
@@ -169,6 +169,8 @@ public class FormProcessor {
 
         for (String appName : recommended) {
             ApplicationBase app = ApplicationManager.getApplicationByName(appName);
+
+            if (app == null) continue;
 
             String text = app.getApplicationDescription().getName() + "\n";
             text += ApplicationManager.getPlayerApplications(player.getName()).contains(app.getApplicationDescription().getName())
